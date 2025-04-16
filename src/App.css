@@ -1,0 +1,258 @@
+/* Reset default styles for the body, html, and root container */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main App Container */
+.app-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+}
+
+/* Logo and Title Styling */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.app-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(44, 0, 62, 0.8); /* Semi-transparent purple background */
+  position: absolute;
+  right: 0;
+  top: 40px;
+  padding: 15px;
+  border-radius: 12px; /* Rounded corners for a soft look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow for depth */
+  backdrop-filter: blur(10px); /* Background blur for a futuristic feel */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  z-index: 5;
+}
+
+/* Make the menu visible when checked */
+#menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Individual Menu Item */
+.menu li {
+  margin: 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Menu Item Link Styling */
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.menu li a:hover {
+  background-color: #9b4dca; /* Purple background on hover */
+  color: #fff; /* White text for contrast */
+  transform: translateX(10px); /* Slight right movement for interaction */
+  box-shadow: 0 0 15px rgba(155, 77, 202, 0.8); /* Purple glow effect */
+}
+
+/* Active menu item (selected) */
+.menu li a.active {
+  background-color: #e246d5; /* Lighter purple for active item */
+  color: white;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Menu Icon Hover Effect */
+.menu-icon:hover {
+  color: #e246d5; /* Change menu icon color on hover */
+  transform: rotate(180deg); /* Smooth rotation effect */
+}
+
+/* Animation for the menu items when appearing */
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu {
+  animation: fadeInMenu 0.5s ease-out;
+}
+
+/* Main Content Area */
+.content {
+  text-align: center;
+  padding: 60px 20px;
+  flex-grow: 1;
+}
+
+/* Content Description */
+.content-description {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #e246d5; /* Legendary purple color */
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Action Button Styling */
+.actions {
+  margin-top: 20px;
+}
+
+.action-button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #ff3333; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-link {
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #9b4dca; /* Purple color for links */
+}
+
+/* Social Icon Styling in Footer */
+.social-icon {
+  margin-right: 5px;
+}
+
+/* New Legendary Styling for Backgrounds */
+.app-container {
+  background: linear-gradient(120deg, rgba(44, 0, 62, 1) 0%, rgba(85, 47, 118, 1) 100%); /* Purple gradient */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Global Font Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #090b17;
+  color: white;
+}
+
+/* Body Background Gradient */
+body {
+  background: linear-gradient(135deg, #0e0f2b, #4b0a47);
+  color: white;
+}
+
+/* Text Shadow Effects for Title */
+.app-title {
+  font-size: 36px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Glowing Button Effects */
+.action-button {
+  background: linear-gradient(135deg, #ff66b2, #ff4d4d);
+  text-transform: uppercase;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff4d4d, #ff1f5d);
+  box-shadow: 0 8px 20px rgba(255, 80, 118, 0.6);
+}
+
+/* Footer Text Shadow for Aesthetic Glow */
+.footer-link {
+  font-size: 16px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover {
+  text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
+  color: #ff66b2;
+}

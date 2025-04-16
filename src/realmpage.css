@@ -1,0 +1,101 @@
+/* General Styles for Realm Page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Glowing Titles and Hero Text */
+  .movie-title {
+    font-size: 35px;
+    font-weight: 900;
+    color: #ff5722;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(255, 87, 34, 1), 0 0 40px rgba(255, 87, 34, 0.7), 0 0 80px rgba(255, 87, 34, 0.5);
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+  }
+  
+  .movie-title:hover {
+    color: #fff;
+    text-shadow: 0 0 50px rgba(255, 87, 34, 1), 0 0 80px rgba(255, 87, 34, 0.7), 0 0 120px rgba(255, 87, 34, 0.5);
+  }
+  
+  /* Cards with Legendary Hover Effects */
+  .movie-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 87, 34, 0.8);
+  }
+  
+  /* Images within Cards */
+  .movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-card img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Background and Realm Effects */
+  .realm-container {
+    background-image: url('./assets/webpage_b.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .realm-container h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ff5722;
+    text-shadow: 0 0 30px rgba(255, 87, 34, 1), 0 0 60px rgba(255, 87, 34, 0.7), 0 0 90px rgba(255, 87, 34, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  .realm-container .movie-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 40px rgba(255, 87, 34, 0.9);
+  }
+  
+  /* Legendary Footer */
+  .footer-realm {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #bbb;
+    font-size: 16px;
+  }
+  
+  .footer-realm a {
+    color: #ff5722;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .footer-realm a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
