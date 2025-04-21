@@ -36,8 +36,8 @@ function HomePage({ bgImage }) {
       </div>
 
       <footer className="footer">
-        <a href="mailto:pradyumnirvani0@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-link">
-          <span className="social-icon">📧</span> pradyumnirvani0@gmail.com
+        <a href="mailto:pradyumnnirvani0@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+          <span className="social-icon">📧</span> pradyumnnirvani0@gmail.com
         </a>
         <a href="https://www.instagram.com/pradyumn_19" target="_blank" rel="noopener noreferrer" className="footer-link">
           <span className="social-icon">📸</span> @pradyumn_19
